@@ -75,7 +75,8 @@ Endpoint: POST /api/forgot-password
     ```json
     {
         "email": "johndoe@example.com"
-    }```
+    }
+    ```
     
 4. Listagem de Usuários
 Endpoint: GET /api/users
