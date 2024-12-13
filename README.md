@@ -92,7 +92,7 @@ Endpoint: GET /api/users
     
     ```json
     {
-        users: [
+        "users": [
             {
                 "id": 1,
                 "name": "John Doe",
