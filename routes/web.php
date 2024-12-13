@@ -19,8 +19,6 @@ Route::get('/reset-password', function (Request $request) {
 
 Route::redirect('/', '/home');
 
-// Route::middleware('auth:sanctum')->group(function () {
-    Route::get('/home', function () {
-        return view('home');
-    })->name('home');
-// });
+Route::get('/home', function () {
+    return view('home');
+})->name('home');
