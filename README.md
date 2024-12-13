@@ -55,7 +55,6 @@ Endpoint: POST /api/register
         "password_confirmation": "password"
     }
     ```
-    ```
 2. Login de Usuário
 Endpoint: POST /api/login
 
