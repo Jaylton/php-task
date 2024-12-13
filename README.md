@@ -4,7 +4,7 @@ A aplicação php-task é uma API que oferece funcionalidades de login, cadastro
 ## Instruções para rodar o projeto
 Clone o repositório
 ```
-git clone https://github.com/seu-usuario/php-task.git
+git clone https://github.com/Jaylton/php-task.git
 cd php-task
 ```
 
@@ -18,6 +18,11 @@ Configure o arquivo .env
 
 Crie um arquivo .env na raiz do projeto baseado no arquivo .env.example e ajuste as configurações conforme necessário, incluindo detalhes do banco de dados.
 
+Criei o banco de dados
+```
+touch database/database.sqlite
+```
+
 Certifique-se de ter o Docker instalado e rodando
 
 Construa e inicie os containers
@@ -26,8 +31,9 @@ Construa e inicie os containers
 docker-compose up -d --build
 ```
 
-
 A aplicação estará disponível em http://localhost:8000.
+
+O MailHog estará disponível em http://localhost:8026.
 
 Rotas Disponíveis e Exemplos de Payloads
 1. Registro de Usuário
