@@ -1,0 +1,275 @@
+// Variables
+@import 'variables';
+
+@import 'util/typography';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+@import "~@fortawesome/fontawesome-free/css/fontawesome.min.css";
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import "~@fortawesome/fontawesome-free/css/regular.min.css";
+@import '~jquery-ui/themes/base/all.css';
+
+body {
+	font-family: $font-family-sans-serif;
+	font-size: $font-size-base;
+	line-height: $line-height-base;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+
+  body::-webkit-scrollbar-track {
+    background:  transparent;        /* color of the tracking area */
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: #6BB8DA;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid transparent;  /* creates padding around scroll thumb */
+  }
+
+:root {
+    --bs-table-striped-bg: rgba(70, 141, 172, 0.15);
+    --bs-table-hover-bg: rgba(70, 141, 172, 0.40);
+}
+.table {
+    --bs-table-striped-bg: rgba(70, 141, 172, 0.15);
+    --bs-table-hover-bg: rgba(70, 141, 172, 0.40);
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 25%);
+
+}
+.table > thead > tr {
+    background-color: rgba(70, 141, 172, 0.80);
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    padding: 0.7rem 0;
+    white-space: nowrap;
+}
+.table > tbody > .border-bottom {
+    border-bottom: 0.5px solid rgba(13, 110, 253, 0.5 ) !important;
+}
+
+.table > tbody > tr:hover > td {
+    color: rgba(60, 131, 172, 1);
+    line-height: inherit;
+
+}
+
+.table > tfoot > .rounded {
+    border-bottom-right-radius: 0.5rem !important;
+    border-bottom-left-radius: 0.5rem !important;
+}
+.table > tfoot > tr{
+    background: transparent;
+    border-bottom-right-radius: 0.50rem !important;
+    border-bottom-left-radius: 0.50rem !important;
+}
+.table > tfoot > tr > td{
+    background-image: linear-gradient(to top, #468dac, #5093b3, #5a99b9, #649fc0, #6da5c6);
+    border-bottom-right-radius: 0.50rem !important;
+    border-bottom-left-radius: 0.50rem !important;
+}
+.table > tfoot > tr > td > nav > ul {
+    margin-bottom: 0;
+}
+.table > tfoot > tr > td > nav > .pagination {
+    justify-content: center;
+}
+.table > tbody > tr > th {
+    background-color: rgba(70, 141, 172, 0.80);
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+.table > thead > tr > th:nth-child(1) {
+    border-top-left-radius: 0.50rem !important;
+}
+.table > thead > tr > th:nth-last-child(1){
+    border-top-right-radius: 0.50rem !important;
+}
+.table > thead > tr > td {
+    color: #808080;
+}
+.table > tfoot > tr > td > nav > ul {
+    margin-bottom: 0;
+  }
+  .table > tfoot > tr > td > nav > .pagination {
+    justify-content: center;
+  }
+table.days-takings {
+    font-size: .7rem;
+}
+table.days-takings > thead > tr > th {
+    font-size: .65rem;
+}
+table.days-takings > tbody > tr > th {
+    font-size: .60rem;
+}
+table.days-takings > :not(caption) > * > *  {
+    padding: 0.5rem 0.4rem;
+}
+ul.list-unstyled::-webkit-scrollbar {
+    width: 8px;               /* width of the entire scrollbar */
+ }
+
+ul.list-unstyled::-webkit-scrollbar-track {
+     background:  transparent;        /* color of the tracking area */
+}
+ul.list-unstyled::-webkit-scrollbar-thumb {
+    background-color: #6BB8DA;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid transparent;  /* creates padding around scroll thumb */
+}
+
+.two-buttons {
+    white-space: nowrap;
+    float:left;
+}
+
+.bg-light-primary {
+	background-color: #ecfbff;
+}
+.bg-light-success {
+	background-color: #a1dcb8;
+}
+.bg-light-danger {
+	background-color: #dccbcf;
+}
+
+// page title
+.pageTitle>img {
+	max-width: 250px;
+}
+
+// buttons
+.btn {
+	border-radius: 3px;
+}
+
+.btn-primary {
+	background-color: $defaultBlue;
+	border-color: $defaultBlue;
+	color: #FFFFFF;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+	background-color: $defaultDarkBlue;
+	border-color: $defaultDarkBlue;
+}
+
+.btn-outline-primary {
+	border-color: $defaultBlue;
+	color: $defaultBlue;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:active {
+	background-color: $defaultDarkBlue;
+	border-color: $defaultDarkBlue;
+	color: #FFFFFF;
+}
+
+.btn-light {
+	background-color: #FFFFFF;
+	border-color: $defaultBlue;
+	color: $defaultBlue;
+}
+
+.btn-light:hover {
+	background-color: $defaultBlue;
+	border-color: $defaultBlue;
+	color: #FFFFFF;
+}
+
+.primary-button {
+	background-color: rgb(48, 133, 214) !important;
+}
+
+.primary-button:hover {
+	background-color: rgb(42, 111, 175) !important;
+}
+
+
+// page content
+#page-content {
+	width: calc(100% - 14rem);
+	margin-left: 14rem;
+	transition: all 0.4s;
+}
+
+// forms
+.form-group {
+	padding: 6px 0px;
+
+	label {
+		font-size: 16px;
+	}
+
+}
+
+.form-control {
+	height: 38px;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	border-radius: 4px;
+	background: transparent;
+	border: 1px solid #CED4DA;
+	font-size: 16px;
+}
+
+textarea.form-control {
+	height: inherit;
+}
+
+.form-control::placeholder {
+	color: #ABB5BE;
+}
+
+.form-switch .form-check-input {
+	height: 1.25em;
+	width: 2.25rem;
+}
+
+.form-check-input:checked {
+	background-color: $defaultDarkBlue;
+	border-color: $defaultDarkBlue;
+}
+
+.form-switch .form-check-input:checked {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='4' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+//alerts
+.alert {
+	p {
+		margin: 0;
+	}
+}
+
+.alert.alert-success {
+	border: 1px solid #75B798;
+	background: #D1E7DD;
+}
+
+.alert.alert-danger {
+	border: 1px solid #F1AEB5;
+	background: #F8D7DA;
+}
+
+//others
+.justify-items-center {
+	justify-items: center !important;
+}
+
+.h3 {
+	font-size: 1.5rem;
+}

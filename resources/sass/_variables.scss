@@ -1,0 +1,67 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: 'Roboto', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// colors
+$hover-bg: rgba(70, 141, 172, 0.40);
+$striped-bg: rgba(70, 141, 172, 0.15);
+$defaultBlue: #6BB8DA;
+$defaultDarkBlue: #468DAC;
+$defaultDarkGrey: #2D2C2F;
+$defaultLightGrey: #F5F5F5;
+$warningRed: #FF0000;
+$backgroundGrey: #CED4DA;
+$navbarBackground: #1f2227;
+$colors: (
+  "cyan": $defaultBlue,
+  "default": $defaultBlue
+) !default;
+.bg-default {
+    background-color: $defaultBlue;
+}
+
+
+/* Swiper carousel */
+$carousel-transition-duration: 0.2s;
+// indicators
+$carousel-indicator-width: 10px;
+$carousel-indicator-height: 10px;
+$carousel-indicator-hit-area-height: 10px;
+$carousel-indicator-spacer: 3px;
+$carousel-indicator-opacity: .5;
+$carousel-indicator-active-bg: #194ebd;
+$carousel-indicator-active-opacity: 1;
+$carousel-indicator-transition: opacity .6s ease;
+// controls
+$carousel-control-color: #194ebd;
+$carousel-control-width: 40px;
+$carousel-control-opacity: .5;
+$carousel-control-hover-opacity: .9;
+$carousel-control-transition: opacity .15s ease;
+$carousel-control-icon-width: 2rem;
+$carousel-control-prev-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='#{$carousel-control-color}'><path d='M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8.009 8.009 0 0 1-8 8z'/><path d='M13.293 7.293 8.586 12l4.707 4.707 1.414-1.414L11.414 12l3.293-3.293-1.414-1.414z'/></svg>");
+$carousel-control-next-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='#{$carousel-control-color}'><path d='M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8.009 8.009 0 0 1-8 8z'/><path d='M9.293 8.707 12.586 12l-3.293 3.293 1.414 1.414L15.414 12l-4.707-4.707-1.414 1.414z'/></svg>");
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 1024px,
+	xl: 1280px,
+	xxl: 1400px
+);
+
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 992px,
+	xl: 1220px,
+	xxl: 1320px
+);
+
+// radios and checkboxes
+$attributeRadioSize: 50px;
